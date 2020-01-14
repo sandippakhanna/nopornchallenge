@@ -135,8 +135,8 @@ const updateToToday = () =>{
         localStorage.setItem('daysLeft',daysLeft-1);
         daysLeftUI.innerHTML = daysLeft;
         console.log("update")
-        if(daysLeft>=150){
-            alert("Your 150 days challange is complete")
+        if(daysLeft<=0){
+            alert("Your 150 days challange is complete");
         }
         // console.log(tomorrowDate.setDate(lastDate.getDate() + 1))
         // console.log(tomorrowDate)
